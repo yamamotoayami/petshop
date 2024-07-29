@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+
+<Script Language = "JavaScript">
+ 	function MouseRollover(MyImage) {
+        MyImage.src = "2.jpg";
+    }
+	function MouseOut(MyImage) {
+        MyImage.src = "1.jpg";
+    }
+
+	function MouseRollover2(MyImage) {
+        MyImage.src = "4.jpg";
+    }
+	function MouseOut2(MyImage) {
+        MyImage.src = "3.jpg";
+    }
+
+	function MouseRollover3(MyImage) {
+        MyImage.src = "6.jpg";
+    }
+	function MouseOut3(MyImage) {
+        MyImage.src = "5.jpg";
+    }
+
+	function MouseRollover4(MyImage) {
+        MyImage.src = "8.jpg";
+    }
+	function MouseOut4(MyImage) {
+        MyImage.src = "7.jpg";
+    }
+	
+	function send(){
+    alert("Email is submitted.")
+  }
+
+</Script> 
+<Style>
+.class1000 {
+  position: relative;
+  margin: 0px;
+  width: 700px;
+  height: 800px;
+}
+.class100 {
+  position: absolute;
+  width: 1235px;
+  height: 680px;
+  top: 125px;
+  left: 100px;
+}	
+.class101 {
+  position: absolute;
+  width: 200px;
+  height: 80px;
+  top: 0px;
+  left: 0px;
+}	
+.class102 {
+  position: absolute;
+  margin: 0px;
+  width: 1235px;
+  height: 680px;
+  top: 125px;
+  left: 100px;
+  overflow: hidden;
+}
+
+
+.class2 {
+  position: absolute;
+  top: 70px;
+  left: 500px;
+}	
+
+.class3 {
+  position: absolute;
+  top: 70px;
+  left: 630px;
+}	
+
+.class4 {
+  position: absolute;
+  top: 70px;
+  left: 760px;
+}	
+
+.class5 {
+  position: absolute;
+  top: 70px;
+  left: 890px;
+}	
+.class100:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.msg{
+   color: #fff;
+   position: absolute;
+}
+.msg-01{
+   top: 10px;
+   left: 125px;
+   font-size: 50px;
+   font-weight: 500;
+   margin-top: 0px;
+}
+.msg-02{
+   top: 60px;
+   left: 130px;
+   font-size: 15px;
+   font-weight: 50;
+}
+.msg-03{
+   top: 90px;
+   left: 130px;
+   font-size: 15px;
+   font-weight: 50;
+}
+.msg-04{
+   top: 120px;
+   left: 130px;
+   font-size: 15px;
+   font-weight: 50;
+}
+#formWrap{
+  position: absolute;
+  width: 100%;
+  top: 220px;
+  left: 130px;
+}
+.form_inner{
+    width: 50%;
+    margin: 0 auto;
+    min-width: 768px;
+    margin-top: 80px;
+    margin-bottom: 100px;
+    -webkit-border-radius:20px;
+    -moz-border-radius: 20px;
+    -o-border-radius: 20px;
+    -ms-border-radius: 20px;
+    border-radius: 20px; 
+}
+.form_inner h3{
+    font-size: 24px;
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+    padding-left: 6.25px;
+    padding-bottom: 12.5px;
+}
+#formWrap {
+  width:800px;
+  margin:0 auto;
+  color:#555;
+  line-height:150%;
+  font-size:85%;
+}
+table.formTable{
+  width:100%;
+  margin:0 auto;
+  border-collapse:collapse;
+}
+table.formTable td,table.formTable th{
+  border:1px solid #ccc;
+  padding:12.5px;
+}
+table.formTable th{
+  widows: 40%;
+  font-weight:normal;
+  background:#efefef;
+  text-align:right;
+}
+input,textarea{
+    padding: 6.25px 30.5px;
+    -webkit-border-radius:5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+    border:1px solid #CCCCCC;
+}
+.form_require {
+    color: #ED1E79;
+    font-size: 12px;
+}
+	</Style>
+
+ </head>
+ <body>
+	<div class="class1000">
+      <img src="name.jpg" class="class101">
+      <a href="homepage3.html">
+        <img src="1.jpg" class="class2" border="0px" width="100px" height="50px" 
+          onMouseOver="MouseRollover(this)" 
+          onMouseOut="MouseOut(this)" 
+          class="class2"/>
+      </a>
+    
+        <a href="about.html">
+        <img src="3.jpg" border="0px" width="100px" height="50px" 
+        onMouseOver="MouseRollover2(this)" 
+        onMouseOut="MouseOut2(this)" 
+        class="class3"/>
+        </a>
+   
+        <a href="contact.html">
+        <img src="5.jpg" border="0px" width="100px" height="50px" 
+        onMouseOver="MouseRollover3(this)" 
+        onMouseOut="MouseOut3(this)" 
+        class="class4"/>		
+        </a>
+    
+        <a href="shop.html">
+        <img src="7.jpg" border="0px" width="100px" height="50px" 
+        onMouseOver="MouseRollover4(this)" 
+        onMouseOut="MouseOut4(this)" 
+        class="class5"/>		
+        </a>
+        <img src="17.jpg" class="class102">  
+
+      <div class="class100" >
+        <h1 class="msg msg-01">Contact</h1>
+        <p class="msg msg-02">EMAIL: abc_pet@pet.ca</p> 
+        <p class="msg msg-03">PHONE: 111-111-1111</p> 
+        <p class="msg msg-04">ADDRESS: 2148 Main Street, Vancouver BC, Canada</p>
+        </div>
+        
+        <div id="contents_wrap">
+          <div id="formWrap">
+           <div class="form_inner">
+            <h3>Inquiry</h3>
+        <form method="post" action="mail.php">
+          <table class="formTable">
+            <tr>
+              <th>Subject</th>
+              <td><select name="subject" required>
+                  <option value="">Select</option>
+                  <option value="1">Service</option>
+                  <option value="2">Change/Confirm Reservation</option>
+                  <option value="3">Products</option>
+                </select> <span class="form_require">(Required)</span></td>
+            </tr>
+            <tr>
+              <th>Name</th>
+              <td><input size="70" type="text" name="Name" required /> <span class="form_require">(Required)</span></td>
+            </tr>
+            <tr>
+              <th>Phone Number</th>
+              <td><input size="70" type="text" name="Phone" /></td>
+            </tr>
+            <tr>
+              <th>Email</th>
+              <td><input size="70" type="text" name="Email" required /><span class="form_require">(Required)</span></td>
+            </tr>
+            <tr>
+              <th>Text<br/></th>
+              <td><textarea name="Text" cols="70" rows="10"></textarea></td>
+            </tr>
+          </table>
+          <p align="center">
+            <input type="submit" value="Send" onclick="send()"/> <input type="reset" value="Reset" />
+          </p>
+        </form>
+        </div>
+      </div>
+      
+      </div>                  
+                    
+
+  </div>
+      
+
+		
+			
+
+ </body>
+</html>
