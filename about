@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+
+<Script Language = "JavaScript">
+ 	function MouseRollover(MyImage) {
+        MyImage.src = "2.jpg";
+    }
+	function MouseOut(MyImage) {
+        MyImage.src = "1.jpg";
+    }
+
+	function MouseRollover2(MyImage) {
+        MyImage.src = "4.jpg";
+    }
+	function MouseOut2(MyImage) {
+        MyImage.src = "3.jpg";
+    }
+	
+
+	function MouseRollover3(MyImage) {
+        MyImage.src = "6.jpg";
+    }
+	function MouseOut3(MyImage) {
+        MyImage.src = "5.jpg";
+    }
+
+	function MouseRollover4(MyImage) {
+        MyImage.src = "8.jpg";
+    }
+	function MouseOut4(MyImage) {
+        MyImage.src = "7.jpg";
+    }
+	
+	
+
+</Script> 
+<Style>
+.class1000 {
+  position: relative;
+  margin: 0px;
+  width: 700px;
+  height: 800px;
+}
+.class100 {
+  position: absolute;
+  width: 500px;
+  height: 300px;
+  top: 125px;
+  left: 100px;
+}	
+.class101 {
+  position: absolute;
+  width: 200px;
+  height: 80px;
+  top: 0px;
+  left: 0px;
+}	
+.class102 {
+  position: absolute;
+  margin: 0px;
+  width: 1235px;
+  height: 100px;
+  left: 200px;
+  background-color: rgb(222, 201, 161);
+}
+.class103 {
+  position: absolute;
+  width: 500px;
+  height: 300px;
+  top: 425px;
+  left: 600px;
+}	
+
+
+
+.class2 {
+  position: absolute;
+  top: 70px;
+  left: 500px;
+}	
+
+.class3 {
+  position: absolute;
+  top: 70px;
+  left: 630px;
+}	
+
+.class4 {
+  position: absolute;
+  top: 70px;
+  left: 760px;
+}	
+
+.class5 {
+  position: absolute;
+  top: 70px;
+  left: 890px;
+}	
+
+.img-frame{
+   position: absolute;
+   width: 600px;
+   height: 400px;
+   overflow: hidden;
+   margin: 0 auto;
+   top: 200px;
+   left: 50px;
+}
+@media screen and (max-width: 767px){
+.img-frame{
+   width: 120%;
+   height: 100px;
+}
+}
+.img-01, .img-02, .img-03, .img-04, .img-05{
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+.img-01{
+   background-image: url('12.jpg');
+   animation: slide-animation-01 35s infinite;
+}
+.img-02{
+   background-image: url('13.jpg');
+   animation: slide-animation-02 35s infinite;
+}
+.img-03{
+   background-image: url('14.jpg');
+   animation: slide-animation-03 35s infinite;
+}
+.img-04{
+   background-image: url('10.jpg');
+   animation: slide-animation-04 35s infinite;
+}
+.img-05{
+   background-image: url('16.jpg');
+   animation: slide-animation-05 35s infinite;
+}
+
+
+@keyframes slide-animation-01 {
+   0% {opacity: 1; transform: scale(1.0);}
+  15% {opacity: 1;}
+  20% {opacity: 0; transform: scale(1.1);}
+  95% {opacity: 0; transform: scale(1.1);}
+100% {opacity: 1; transform: scale(1.0);}
+}
+@keyframes slide-animation-02 {
+   0% {opacity: 0;}
+  10% {opacity: 0; transform: scale(1.1);}
+  20% {opacity: 1;}
+  35% {opacity: 1; transform: scale(1.0);}
+  40% {opacity: 0;}
+  100% {opacity: 0;}
+}
+@keyframes slide-animation-03 {
+   0% {opacity: 0;}
+  30% {opacity: 0;  transform: scale(1.0);}
+  40% {opacity: 1;}
+  50% {opacity: 1; transform: scale(1.1);}
+  60% {opacity: 0;}
+  100% {opacity: 0;}
+}
+@keyframes slide-animation-04 {
+   0% {opacity: 0;}
+  50% {opacity: 0;  transform: scale(1.1);}
+  60% {opacity: 1;}
+  70% {opacity: 1; transform: scale(1.0);}
+  80% {opacity: 0;}
+100% {opacity: 0;}
+}
+@keyframes slide-animation-05 {
+   0% {opacity: 0;}
+  70% {opacity: 0;  transform: scale(1.0);}
+  80% {opacity: 1;}
+  90% {opacity: 1; transform: scale(1.1);}
+100% {opacity: 0;}
+}
+
+.text{
+  position: absolute;
+  width: 620px;
+  height: 300px;
+  top: 225px;
+  left: 700px;
+  font-size: 23px;
+  line-height:200%;
+}
+
+	</Style>
+
+ </head>
+ <body>
+	
+	<div class="class1000">
+    <img src="name.jpg" class="class101"> 
+
+    <div class="img-frame">
+      <div class="img-01"></div>
+      <div class="img-02"></div>
+      <div class="img-03"></div>
+      <div class="img-04"></div>
+      <div class="img-05"></div>
+   </div>
+
+
+		<a href="homepage3.html">
+		<img src="1.jpg" class="class2" border="0px" width="100px" height="50px" 
+			onMouseOver="MouseRollover(this)" 
+			onMouseOut="MouseOut(this)" 
+			class="class2"/>
+			</a>
+
+		<a href="about.html">
+		<img src="3.jpg" border="0px" width="100px" height="50px" 
+		onMouseOver="MouseRollover2(this)" 
+		onMouseOut="MouseOut2(this)" 
+		class="class3"/>
+		</a>
+		
+		<a href="contact.html">
+		<img src="5.jpg" border="0px" width="100px" height="50px" 
+		onMouseOver="MouseRollover3(this)" 
+		onMouseOut="MouseOut3(this)" 
+		class="class4"/>		
+		</a>
+
+		<a href="shop.html">
+		<img src="7.jpg" border="0px" width="100px" height="50px" 
+		onMouseOver="MouseRollover4(this)" 
+		onMouseOut="MouseOut4(this)" 
+		class="class5"/>		
+		</a>
+	
+    <div class="text">
+      <h1>About US</h1>
+			<p>ABC Pet is a pet store that values the local community. We take responsibility for the care of our customers' precious pets. We treat our customers' pets like they love their pet. We also share our customer's concerns and joys.</p>
+		</div>
+
+		</div>
+
+
+
+		
+			
+
+ </body>
+</html>
