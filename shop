@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+
+<Script Language = "JavaScript">
+ 	function MouseRollover(MyImage) {
+        MyImage.src = "2.jpg";
+    }
+	function MouseOut(MyImage) {
+        MyImage.src = "1.jpg";
+    }
+	function MouseRollover2(MyImage) {
+        MyImage.src = "4.jpg";
+    }
+	function MouseOut2(MyImage) {
+        MyImage.src = "3.jpg";
+    }
+	function MouseRollover3(MyImage) {
+        MyImage.src = "6.jpg";
+    }
+	function MouseOut3(MyImage) {
+        MyImage.src = "5.jpg";
+    }
+	function MouseRollover4(MyImage) {
+        MyImage.src = "8.jpg";
+    }
+	function MouseOut4(MyImage) {
+        MyImage.src = "7.jpg";
+    }
+	function MouseRollover5(MyImage) {
+        MyImage.src = "check2.jpg";
+    }
+	function MouseOut5(MyImage) {
+        MyImage.src = "check.jpg";
+    }
+
+        ARow = new Array("A","A","A","A","A","A","A","A","A");  
+        Price = new Array("50","30","60","40","20","60","40","120","100");     
+
+        var total;
+        var p;
+
+        total=0;
+
+	function pick(n){
+    if(ARow[n]=="A"){
+      ARow[n]="B";
+      p = parseInt(Price[n]);
+      total = total + p;
+     // alert(total);
+     // alert(p+1);
+      switch(n){
+        case 0:
+        ciao.src = "ciao2.jpg";
+        break;
+
+        case 1:
+        inaba.src = "inaba2.jpg";
+        break;
+
+        case 2:
+        bone.src = "bone2.jpg";
+        break
+
+        case 3:
+        tray.src = "tray2.jpg";
+        break;
+
+        case 4:
+        lead.src = "lead2.jpg";
+        break;
+
+        case 5:
+        bed.src = "bed2.jpg";
+        break;
+
+        case 6:
+        toy.src = "toy2.jpg";
+        break;
+
+        case 7:
+        tower.src = "tower2.jpg";
+        break;
+
+        case 8:
+        chacky.src = "chacky2.jpg";
+        break;
+
+      }
+    } 
+    else{
+      var check = confirm('Do you want to cancel this item?');
+         if(check == true){
+          ARow[n]="A";
+          p = parseInt(Price[n]);
+          total = total - p;
+          //alert(total);
+          switch(n){
+           case 0:
+           ciao.src = "ciao.jpg";
+           break;
+
+           case 1:
+           inaba.src = "inaba.jpg";
+           break;
+
+           case 2:
+           bone.src = "bone.jpg";
+           break
+
+           case 3:
+           tray.src = "tray.jpg";
+           break;
+
+           case 4:
+           lead.src = "lead.jpg";
+           break;
+
+           case 5:
+           bed.src = "bed.jpg";
+           break;
+
+           case 6:
+           toy.src = "toy.jpg";
+           break;
+
+           case 7:
+           tower.src = "tower.jpg";
+           break;
+
+           case 8:
+           chacky.src = "chacky.jpg";
+           break;
+
+               }
+          }
+          else{
+                    }
+    }
+  }
+function checkout(){
+  alert("The total amount in your shopping cart is $"+total);
+}
+</Script> 
+<Style>
+.class1000 {
+  position: relative;
+  margin: 0px;
+  width: 700px;
+  height: 250px;
+}
+.class100 {
+  position: absolute;
+  width: 1235px;
+  height: 620px;
+  top: 125px;
+  left: 100px;
+}	
+.class101 {
+  position: absolute;
+  width: 200px;
+  height: 80px;
+  top: 0px;
+  left: 0px;
+}	
+.class102 {
+  position: absolute;
+  margin: 0px;
+  width: 1235px;
+  height: 100px;
+  left: 200px;
+  background-color: rgb(222, 201, 161);
+}
+
+
+.class2 {
+  position: absolute;
+  top: 70px;
+  left: 500px;
+}	
+
+.class3 {
+  position: absolute;
+  top: 70px;
+  left: 630px;
+}	
+
+.class4 {
+  position: absolute;
+  top: 70px;
+  left: 760px;
+}	
+
+.class5 {
+  position: absolute;
+  top: 70px;
+  left: 890px;
+}	
+
+.slide-container {
+  position: absolute;
+  top: 125px;
+  left: 100px;
+  width: 1235px;
+  display: flex;
+  align-items: center;
+  height: 200px;
+  overflow: hidden;
+  flex-direction: column;
+}
+.slide-wrapper {
+  display: flex;
+  flex-direction: column;
+  animation: slide-flow 40s infinite linear 1s both;
+}
+.slide{
+  width: 1235px;
+  object-fit: cover;
+  border: 1px solid #ddd;
+}
+@keyframes slide-flow {
+     0% {transform: translateY(0);}
+ 100% {transform: translateY(-100%);}
+}
+.shop{
+   font-size: 50px;
+   color: white;
+   position: absolute;
+   top: 30%;
+   left: 50%;
+   transform: translate(-50% , -50%);
+}
+.slide-wrapper:after{
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, .5);
+}
+
+.class2000 {
+  position: relative;
+  margin: 0px;
+  width: 800px;
+  height: 250px;
+}
+.ciao {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 125px;
+  left: 120px;
+}	
+.ciao_text {
+  position: absolute;
+  top: 125px;
+  left: 230px;
+}	
+.inaba {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 125px;
+  left: 380px;
+}	
+.inaba_text {
+  position: absolute;
+  top: 125px;
+  left: 490px;
+}	
+.bone {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 125px;
+  left: 640px;
+}	
+.bone_text {
+  position: absolute;
+  width: 100px;
+  top: 125px;
+  left: 750px;
+}	
+.tray {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 265px;
+  left: 120px;
+}	
+.tray_text {
+  position: absolute;
+  top: 265px;
+  left: 230px;
+}	
+.lead {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 265px;
+  left: 380px;
+}	
+.lead_text {
+  position: absolute;
+  top: 265px;
+  left: 490px;
+}	
+.bed {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 265px;
+  left: 640px;
+}	
+.bed_text {
+  position: absolute;
+  width: 100px;
+  top: 265px;
+  left: 750px;
+}	
+.toy {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 405px;
+  left: 120px;
+}	
+.toy_text {
+  position: absolute;
+  top: 405px;
+  left: 230px;
+}	
+.tower {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 405px;
+  left: 380px;
+}	
+.tower_text {
+  position: absolute;
+  top: 405px;
+  left: 490px;
+}	
+.chacky {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 405px;
+  left: 640px;
+}	
+.chacky_text {
+  position: absolute;
+  width: 100px;
+  top: 405px;
+  left: 750px;
+}	
+.check {
+  position: absolute;
+  width: 150px;
+  height: 70px;
+  top: 420px;
+  left: 1100px;
+}	
+
+
+
+	</Style>
+
+ </head>
+ <body>
+	<div class="class1000">
+    <img src="name.jpg" class="class101">
+
+		<a href="homepage3.html">        
+		<img src="1.jpg"  border="0px" width="100px" height="50px" 
+			onMouseOver="MouseRollover(this)" 
+			onMouseOut="MouseOut(this)" 
+			class="class2">
+		</a>
+
+		<a href="about.html">
+		<img src="3.jpg" border="0px" width="100px" height="50px" 
+		onMouseOver="MouseRollover2(this)" 
+		onMouseOut="MouseOut2(this)" 
+		class="class3"/>
+		</a>
+		
+		<a href="contact.html">
+		<img src="5.jpg" border="0px" width="100px" height="50px" 
+		onMouseOver="MouseRollover3(this)" 
+		onMouseOut="MouseOut3(this)" 
+		class="class4"/>		
+		</a>
+
+		<a href="shop.html">
+		<img src="7.jpg" border="0px" width="100px" height="50px" 
+		onMouseOver="MouseRollover4(this)" 
+		onMouseOut="MouseOut4(this)" 
+		class="class5"/>		
+		</a>
+
+    <div class="slide-container">
+      <div class="slide-wrapper">
+         <img class="slide" src="15.jpg">
+         <img class="slide" src="15.jpg" >
+         <img class="slide" src="15.jpg">
+      </div>
+      <div class="slide-wrapper">
+         <img class="slide" src="15.jpg" >
+         <img class="slide" src="15.jpg" >
+         <img class="slide" src="15.jpg" >
+      </div>
+      <div class="slide-wrapper">
+         <img class="slide" src="15.jpg" >
+         <img class="slide" src="15.jpg" >
+         <img class="slide" src="15.jpg" >
+      </div>
+      <h1 class="shop">SHOP</h1>
+
+   </div>
+
+		</div>
+
+<div class="class2000">
+  <img src="ciao.jpg" class="ciao" name="ciao" ID="ciao" onclick="pick(0)">
+  <p class="ciao_text">Cat Sweets <br>$50</p>
+  <img src="inaba.jpg" class="inaba" name="inaba" ID="inaba" onclick="pick(1)">
+  <p class="inaba_text">Dog Sweets <br>$30</p>
+  <img src="bone.jpg" class="bone" name="bone" ID="bone" onclick="pick(2)">
+  <p class="bone_text">Dog Bones <br>$60</p>
+  <img src="tray.jpg" class="tray" name="tray" ID="tray" onclick="pick(3)">
+  <p class="tray_text">Food Tray <br>$40</p>
+  <img src="lead.jpg" class="lead" name="lead" ID="lead" onclick="pick(4)">
+  <p class="lead_text">Lead <br>$20</p>
+  <img src="bed.jpg" class="bed" name="bed" ID="bed" onclick="pick(5)">
+  <p class="bed_text">Small Bed <br>$60</p>
+  <img src="toy.jpg" class="toy" name="toy" ID="toy" onclick="pick(6)">
+  <p class="toy_text">Cat Toy <br>$40</p>
+  <img src="tower.jpg" class="tower" name="tower" ID="tower" onclick="pick(7)">
+  <p class="tower_text">Cat Tower <br>$120</p>
+  <img src="chacky.jpg" class="chacky" name="chacky" ID="chacky" onclick="pick(8)">
+  <p class="chacky_text">Dog Costume <br>$100</p>
+  <img src="check.jpg" class="check" name="check" ID="check" onclick="checkout()" onMouseOver="MouseRollover5(this)" onMouseOut="MouseOut5(this)" >
+
+  </div>
+</div>
+		
+			
+
+ </body>
+</html>
