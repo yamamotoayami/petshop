@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+
+<Script Language = "JavaScript">
+ 	function MouseRollover(MyImage) {
+        MyImage.src = "2.jpg";
+    }
+	function MouseOut(MyImage) {
+        MyImage.src = "1.jpg";
+    }
+
+	function MouseRollover2(MyImage) {
+        MyImage.src = "4.jpg";
+    }
+	function MouseOut2(MyImage) {
+        MyImage.src = "3.jpg";
+    }
+	
+
+	function MouseRollover3(MyImage) {
+        MyImage.src = "6.jpg";
+    }
+	function MouseOut3(MyImage) {
+        MyImage.src = "5.jpg";
+    }
+
+	function MouseRollover4(MyImage) {
+        MyImage.src = "8.jpg";
+    }
+	function MouseOut4(MyImage) {
+        MyImage.src = "7.jpg";
+    }
+	
+	
+
+</Script> 
+<Style>
+.class1000 {
+  position: relative;
+  margin: 0px;
+  width: 700px;
+  height: 800px;
+}
+.class100 {
+  position: absolute;
+  width: 1235px;
+  height: 620px;
+  top: 125px;
+  left: 100px;
+}	
+.class101 {
+  position: absolute;
+  width: 200px;
+  height: 80px;
+  top: 0px;
+  left: 0px;
+}	
+.class102 {
+  position: absolute;
+  margin: 0px;
+  width: 1235px;
+  height: 100px;
+  left: 200px;
+  background-color: rgb(222, 201, 161);
+}
+
+
+.class2 {
+  position: absolute;
+  top: 70px;
+  left: 500px;
+}	
+
+.class3 {
+  position: absolute;
+  top: 70px;
+  left: 630px;
+}	
+
+.class4 {
+  position: absolute;
+  top: 70px;
+  left: 760px;
+}	
+
+.class5 {
+  position: absolute;
+  top: 70px;
+  left: 890px;
+}	
+
+
+	</Style>
+
+ </head>
+ <body>
+	<div class="class1000">
+
+		<a href="homepage2.html">
+        <img src="11.jpg" class="class100">
+      <!--  <div class="class102"> -->
+        <img src="name.jpg" class="class101">
+        
+		<img src="1.jpg" class="class2" border="0px" width="100px" height="50px" 
+			onMouseOver="MouseRollover(this)" 
+			onMouseOut="MouseOut(this)" 
+			class="class2"/>
+			</a>
+
+		<a href="about.html">
+		<img src="3.jpg" border="0px" width="100px" height="50px" 
+		onMouseOver="MouseRollover2(this)" 
+		onMouseOut="MouseOut2(this)" 
+		class="class3"/>
+		</a>
+
+		
+		<a href="contact.html">
+		<img src="5.jpg" border="0px" width="100px" height="50px" 
+		onMouseOver="MouseRollover3(this)" 
+		onMouseOut="MouseOut3(this)" 
+		class="class4"/>		
+		</a>
+
+		<a href="shop.html">
+		<img src="7.jpg" border="0px" width="100px" height="50px" 
+		onMouseOver="MouseRollover4(this)" 
+		onMouseOut="MouseOut4(this)" 
+		class="class5"/>		
+		</a>
+	
+		</div>
+
+
+		
+			
+
+ </body>
+</html>
