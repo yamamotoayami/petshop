@@ -208,28 +208,28 @@
    </div>
 
 
-		<a href="homepage3.html">
+		<a href="https://yamamotoayami.github.io/petshop/homepage2.html">
 		<img src="1.jpg" class="class2" border="0px" width="100px" height="50px" 
 			onMouseOver="MouseRollover(this)" 
 			onMouseOut="MouseOut(this)" 
 			class="class2"/>
 			</a>
 
-		<a href="about.html">
+		<a href="https://yamamotoayami.github.io/petshop/about.html">
 		<img src="3.jpg" border="0px" width="100px" height="50px" 
 		onMouseOver="MouseRollover2(this)" 
 		onMouseOut="MouseOut2(this)" 
 		class="class3"/>
 		</a>
 		
-		<a href="contact.html">
+		<a href="https://yamamotoayami.github.io/petshop/contact.html">
 		<img src="5.jpg" border="0px" width="100px" height="50px" 
 		onMouseOver="MouseRollover3(this)" 
 		onMouseOut="MouseOut3(this)" 
 		class="class4"/>		
 		</a>
 
-		<a href="shop.html">
+		<a href="https://yamamotoayami.github.io/petshop/shop.html">
 		<img src="7.jpg" border="0px" width="100px" height="50px" 
 		onMouseOver="MouseRollover4(this)" 
 		onMouseOut="MouseOut4(this)" 
